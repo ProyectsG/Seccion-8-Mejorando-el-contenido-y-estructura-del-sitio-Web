@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Elemento HEAD no se muestra en el navegador, aqui se coloca los metadatos,
+titulo de la paguina, enlaces, etc-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/CSS" href="style_sitioWeb.css">
+</head>
+<!--Elemento BODY aque se coloca todo el contenido de la pag Web-->
+
+<body>
+    <!--Agregando barra de navegacion-->
+     <!--Agregar, además, el atributo “role” al elemento <nav> en todas las páginas para
+mejorar la accesibilidad de nuestro sitio web:
+<nav class="navbar" role="navigation">
+    Este atributo proporciona información adicional a las tecnologías de
+asistencia como lectores de pantalla para ayudar a los usuarios en condición de
+discapacidad a navegar y comprender mejor el contenido de tu sitio web.
+-->
+    <div class="container-nav" role="navigation">
+        <nav class="navbar" role="navigation">
+            <a href="#" class="brand">Mi página web</a>
+            <ul class="nav-links">
+            <li><a href="mi-primer-sitio-website.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+        <button class="button-menu-toggle">Menu</button>
+        </div>
+<!-- Copiar el contenido de "services.html" en "about.html" como punto de partida.
+Reemplazar el contenido dentro del elemento <div class="container"> con el
+siguiente código-->
+    <div class="container">
+        <h1>Acerca de</h1>
+        <p>¡Bienvenido a nuestra página “Acerca de”! Aquí, aprenderás más sobre
+        nuestra empresa y los servicios que ofrecemos.</p>
+
+<!-- Ahora vamos a agregar imágenes a tu página “Acerca de”. Para ello, debes
+descargar tres imágenes que desees usar y guardarlas en la misma carpeta que
+tus archivos HTML.
+En "about.html" agregar tres etiquetas <img> dentro del elemento <div
+class="container">, debajo de la etiqueta <p>
+    Agregarlas dentro de un div contenedor para poder aplicarles estilos-->
+    <div class="imagenes-container">
+<img src="/imagenes/imagen1.jpg" alt="botes en lago cristalino - imagen 1" />
+<img src="/imagenes/imagen2.jpg" alt="montañas soleadas - imagen 2" />
+<img src="/imagenes/imagen3.jpg" alt="camino de bosque otoñal- imagen 3" />
+</div>
+
+    </div>
+<!-- Antes de  finalizar el BODY va la etiqueta SCRIPT y dentro el enlace-->
+<script src="script.js"></script>
+</body>
+
+
+
+</html>

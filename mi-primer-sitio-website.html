@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Elemento HEAD no se muestra en el navegador, aqui se coloca los metadatos,
+titulo de la paguina, enlaces, etc-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer sitio Web</title>
+    <link rel="stylesheet" type="text/CSS" href="style_sitioWeb.css">
+</head>
+<!--Elemento BODY aque se coloca todo el contenido de la pag Web-->
+
+<body>
+    <!--Agregando barra de navegacion-->
+    <!--Actualizar los enlaces de navegación del elemento <nav> en "mi-primerapagina-web.html" cambiando los atributos “href” para que incluyan las nuevas
+páginas. Por ejemplo, para “servicios”, reemplazaremos el “#” por “services.html”
+Agregar, además, el atributo “role” al elemento <nav> en todas las páginas para
+mejorar la accesibilidad de nuestro sitio web-->
+    <header class="container-nav">
+        <nav class="navbar" role="navigation">
+        <a href="#" class="brand">Mi página web</a>
+        <ul class="nav-links">
+        <li><a href="mi-primer-sitio-website.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+        </header>
+
+        <main class="container">
+            <h1>Bienvenidos a mi primer Website</h1>
+            <section>
+            <h2>Presentación</h2>
+            <p>Soy Nancy, ¡y esta es mi primera página web!</p>
+            <p>Estoy aprendiendo desarrollo web para crear sitios web visualmente
+            atrapantes y funcionales.</p>
+            </section>
+            <section>
+            <h2>Lo que se viene...</h2>
+            <p>
+            A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos
+            lenguajes me ayudarán a crear una base sólida en el desarrollo web frontend.
+            </p>
+<!-- Para un video de Youtube: Podrás hacer clic en el botón de “Compartir”y luego
+seleccionar la opción de “Incorporar” para obtener el código iframe que
+deberás sumar a tu archivo HTML.
+Para agregar un video propio
+<video src="nombre-del-video.mp4" controls></video>
+Reemplaza "nombre-del-video.mp4" con el nombre y extensión real del
+archivo de video que deseas agregar. El atributo “controls” permitirá que se
+muestren los controles de reproducción del video en el navegador -->
+
+<div class="video-container">
+            <iframe width="560" height="315"
+src="https://www.youtube.com/embed/qWcwFMAqpME" title="YouTube video
+player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+<video width="560" height="315" src="imagenes/videoCalma.mp4" controls></video>
+
+</div>
+            </section>
+        </main>
+        <!-- Contenido del pie de página -->
+        <footer>
+            
+            <!-- el atributo "aria-label" proporciona una etiqueta alternativa para el botón que
+es leída por las tecnologías de asistencia, como lectores de pantalla, para
+mejorar la accesibilidad -->
+            <h5>Desarrollado por Nancy Cardozo</h5><h6>2023</h6>
+            <button onClick="showAlert()" aria-label="Dispara una alerta de saludo">¡Haz
+                clic en mí!</button>
+               <!-- <button id="miBoton">Haz clic aquí</button>-->
+            <div id="div-icon">
+                <a href="https://github.com/" target="_blank"><img src="imagenes/icons8-github.svg" alt="" class="icon-git"> </a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="imagenes/icons8-linkedin.svg" alt="" class="icon-git"></a>
+            </div>
+
+            </footer>
+
+<!-- Antes de  finalizar el BODY va la etiqueta SCRIPT y dentro el enlace-->
+<script src="script.js"></script>
+</body>
+
+
+
+</html>
